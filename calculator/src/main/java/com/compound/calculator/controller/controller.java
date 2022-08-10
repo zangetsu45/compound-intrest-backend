@@ -12,7 +12,7 @@ import com.compound.calculator.service.service;
 @RestController
 @RequestMapping("/calculator")
 public class controller {
-@GetMapping(path="/calculate",produces=MediaType.APPLICATION_JSON_VALUE)
+@PostMapping(path="/calculate",produces=MediaType.APPLICATION_JSON_VALUE)
 public float answer(@RequestBody service s) {
 	return s.calculate();
 }
